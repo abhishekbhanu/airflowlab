@@ -4,7 +4,6 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 import sys
 
-sys.path.append("/Users/abhi/dev/github/abhishekbhanu/dailyqoutegenerator/dags/quotegenerator")
 from quotegenerator.dailyquotegenerator import getdailyquote
 
 with DAG(
